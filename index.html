@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Select-box</title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:700,600,400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<input id="textfield" type="text" name="" value="" placeholder="Select">
+		<ul class="list-option">
+			<li>Bahrain</li>
+		    <li>Bangladesh</li>
+		    <li>Barbados</li>
+		    <li>Belarus</li>
+		    <li>Belgium</li>
+		    <li>Belize</li>
+		    <li>Benin</li>
+		    <li>Bhutan</li>
+		    <li>Bolivia</li>
+		    <li>Bosnia and Herzegovina</li>
+		    <li>Botswana</li>
+		    <li>Brazil</li>
+		    <li>Brunei</li>
+		    <li>Bulgaria</li>
+		</ul>
+	</div>
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('ul li').click(function(){
+			$('#textfield').val($(this).text());
+			$('ul').slideUp('fast');
+		});
+		$('#textfield').focus(function(){
+			$('ul').slideDown('fast')
+		});
+	});
+	$(document).on('click', function (e) {
+	    if ($(e.target).closest("#textfield").length === 0) {
+	        $("ul").slideUp('fast');;
+	    }
+	});
+</script>
+</html>

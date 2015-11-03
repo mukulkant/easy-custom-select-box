@@ -1,0 +1,31 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+div{
+	width:200px;
+	margin:10px auto;
+}
+input{
+	width:100%;
+	border:1px solid #00a9c8;
+	padding:5px 20px 5px 5px;
+	background:url(tg.png) no-repeat 97% center / 10px 8px;
+	font-size:13px;
+}
+ul{
+	display:none;
+	background:#00a9c8;
+}
+ul li{
+	list-style:none;
+	width:200px;
+	padding:5px;
+	color:#fff;
+	font-size:13px;
+}
+ul li:hover{
+	background:#079fba;
+}
